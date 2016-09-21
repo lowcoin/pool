@@ -78,7 +78,7 @@
         }
 
     </style>
-    
+
     <link href="custom.css" rel="stylesheet">
 
 </head>
@@ -122,7 +122,7 @@
     function getTransactionUrl(id) {
         return transactionExplorer.replace('{symbol}', lastStats.config.symbol.toLowerCase()).replace('{id}', id);
     }
-    
+
     $.fn.update = function(txt){
         var el = this[0];
         if (el.textContent !== txt)
@@ -300,7 +300,7 @@
 
     $(function(){
 		$("head").append("<link rel='stylesheet' href=" + themeCss + ">");
-		
+
         $.get(api + '/stats', function(data){
             lastStats = data;
             updateIndex();
@@ -362,7 +362,7 @@
 
 <footer>
     <div class="text-muted">
-        Powered by <a target="_blank" href="//cryptonotemining.org"><i class="fa fa-github"></i> cryptonote-universal-pool</a>
+        Powered by <a target="_blank" href="//lowcoinmining.org"><i class="fa fa-github"></i> lowcoin-universal-pool</a>
         <span id="poolVersion"></span>
         open sourced under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL</a>
     </div>

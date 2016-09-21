@@ -1,11 +1,11 @@
 {
-    "name": "cryptonote-universal-pool",
+    "name": "lowcoin-universal-pool",
     "version": "0.0.1",
     "license": "GPL-2.0",
     "author": "Matthew Little",
     "repository": {
         "type": "git",
-        "url": "https://github.com/fancoder/cryptonote-universal-pool.git"
+        "url": "https://github.com/fancoder/lowcoin-universal-pool.git"
     },
     "dependencies": {
         "bignum": "*",
@@ -15,7 +15,7 @@
         "dateformat": "*",
         "base58-native": "*",
         "multi-hashing": "git://github.com/fancoder/node-multi-hashing.git",
-        "cryptonote-util": "git://github.com/fancoder/node-cryptonote-util.git"
+        "lowcoin-util": "git://github.com/fancoder/node-lowcoin-util.git"
     },
     "engines": {
         "node": ">=0.10"

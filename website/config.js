@@ -8,7 +8,7 @@ var email = "support@poolhost.com";
 
 var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
-var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
+var easyminerDownload = "https://github.com/zone117x/lowcoin-easy-miner/releases/";
 
 var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
 

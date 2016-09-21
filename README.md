@@ -1,7 +1,7 @@
-cryptonote-universal-pool
+lowcoin-universal-pool
 ====================
 
-High performance Node.js (with native C addons) mining pool for CryptoNote based coins such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
+High performance Node.js (with native C addons) mining pool for LowCoin based coins such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
 Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 
@@ -14,7 +14,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
   * [Requirements](#requirements)
   * [Downloading & Installing](#1-downloading--installing)
   * [Configuration](#2-configuration)
-  * [Configure Easyminer](#3-optional-configure-cryptonote-easy-miner-for-your-pool)
+  * [Configure Easyminer](#3-optional-configure-lowcoin-easy-miner-for-your-pool)
   * [Starting the Pool](#4-start-the-pool)
   * [Host the front-end](#5-host-the-front-end)
   * [Customizing your website](#6-customize-your-website)
@@ -72,9 +72,9 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 ### Community / Support
 
-* [CryptoNote Technology](https://cryptonote.org)
-* [CryptoNote Forum](https://forum.cryptonote.org/)
-* [CryptoNote Universal Pool Forum](https://bitcointalk.org/index.php?topic=705509)
+* [LowCoin Technology](https://lowcoin.org)
+* [LowCoin Forum](https://forum.lowcoin.org/)
+* [LowCoin Universal Pool Forum](https://bitcointalk.org/index.php?topic=705509)
 
 #### Pools Using This Software
 
@@ -121,7 +121,7 @@ sudo apt-get install git redis-server libboost1.55-all-dev nodejs-dev nodejs-leg
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/fancoder/cryptonote-universal-pool.git pool
+git clone https://github.com/fancoder/lowcoin-universal-pool.git pool
 cd pool
 npm update
 ```
@@ -137,10 +137,10 @@ Explanation for each field:
 /* Used for front-end display */
 "symbol": "XDN",
 
-/* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
+/* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/lowcoin_config.h */
 "coinUnits": 100000000,
 
-/* Coin network time to mine one block, see DIFFICULTY_TARGET constant in DAEMON_CODE/src/cryptonote_config.h */
+/* Coin network time to mine one block, see DIFFICULTY_TARGET constant in DAEMON_CODE/src/lowcoin_config.h */
 "coinDifficultyTarget": 240,
 
 "logging": {
@@ -355,8 +355,8 @@ Explanation for each field:
     }
 ```
 
-#### 3) [Optional] Configure cryptonote-easy-miner for your pool
-Your miners that are Windows users can use [cryptonote-easy-miner](https://github.com/zone117x/cryptonote-easy-miner)
+#### 3) [Optional] Configure lowcoin-easy-miner for your pool
+Your miners that are Windows users can use [lowcoin-easy-miner](https://github.com/zone117x/lowcoin-easy-miner)
 which will automatically generate their wallet address and stratup multiple threads of simpleminer. You can download
 it and edit the `config.ini` file to point to your own pool.
 Inside the `easyminer` folder, edit `config.init` to point to your pool details
@@ -422,8 +422,8 @@ var email = "support@poolhost.com";
 /* Market stat display params from https://www.cryptonator.com/widget */
 var cryptonatorWidget = ["XDN-BTC", "XDN-USD", "XDN-EUR"];
 
-/* Download link to cryptonote-easy-miner for Windows users. */
-var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
+/* Download link to lowcoin-easy-miner for Windows users. */
+var easyminerDownload = "https://github.com/zone117x/lowcoin-easy-miner/releases/";
 
 /* Used for front-end block links. */
 var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
@@ -457,7 +457,7 @@ the Node.js modules, and any config files that may have been changed.
 
 ### Setting up Testnet
 
-No cryptonote based coins have a testnet mode (yet) but you can effectively create a testnet with the following steps:
+No lowcoin based coins have a testnet mode (yet) but you can effectively create a testnet with the following steps:
 
 * Open `/src/p2p/net_node.inl` and remove lines with `ADD_HARDCODED_SEED_NODE` to prevent it from connecting to mainnet (Monero example: http://git.io/0a12_Q)
 * Build the coin from source
